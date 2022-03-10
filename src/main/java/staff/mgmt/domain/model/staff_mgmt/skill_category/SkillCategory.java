@@ -1,4 +1,4 @@
-package staff.mgmt.domain.model.staff_mgmt.skill_definition;
+package staff.mgmt.domain.model.staff_mgmt.skill_category;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -11,8 +11,9 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class SkillDefinition {
+public class SkillCategory {
     private String id;
-    private String skillCategoryId;
-    private List<String> staffSkillIdList;
+    private String name;
+    private List<String> skillDefinitionIdList;
+
 }
