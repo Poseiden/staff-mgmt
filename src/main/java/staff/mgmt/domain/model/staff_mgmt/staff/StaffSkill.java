@@ -11,7 +11,7 @@ import lombok.Setter;
 @NoArgsConstructor
 public class StaffSkill {
     private String id;
-
+    private String skillDefinitionId;
     private int duration; //todo 几年？
     private String level; //todo 枚举
 }
