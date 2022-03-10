@@ -1,16 +1,17 @@
-package staff.mgmt.domain.model.staff_mgmt.staff;
+package staff.mgmt.domain.model.staff_mgmt.role;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.List;
+
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class StaffRole {
+public class Role {
     private String id;
-    private String roleId;
-    private String organizationId;
+    private List<String> staffRoleIdList;
 }
