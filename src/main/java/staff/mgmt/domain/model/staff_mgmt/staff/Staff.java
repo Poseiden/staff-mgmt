@@ -13,8 +13,7 @@ import java.util.List;
 @NoArgsConstructor
 public class Staff {
     private String id;
-    private List<Skill> skills;
+    private List<StaffSkill> staffSkillList;
     private List<WorkExperience> workExperienceList;
     private List<StaffRole> staffRoleList;
-    private List<String> leaveRecordList;
 }

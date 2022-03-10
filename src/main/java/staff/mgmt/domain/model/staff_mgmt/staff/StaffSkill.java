@@ -1,4 +1,4 @@
-package staff.mgmt.domain.model.staff_mgmt.leave;
+package staff.mgmt.domain.model.staff_mgmt.staff;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,7 +9,9 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class LeaveRecord {
+public class StaffSkill {
     private String id;
-    private String staffId;
+
+    private int duration; //todo 几年？
+    private String level; //todo 枚举
 }
