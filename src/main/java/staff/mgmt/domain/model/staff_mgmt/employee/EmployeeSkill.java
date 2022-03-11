@@ -1,4 +1,4 @@
-package staff.mgmt.domain.model.staff_mgmt.staff;
+package staff.mgmt.domain.model.staff_mgmt.employee;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,7 +9,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class StaffSkill {
+public class EmployeeSkill {
     private String id;
     private String skillDefinitionId;
     private int duration; //todo 几年？

@@ -1,4 +1,4 @@
-package staff.mgmt.domain.model.staff_mgmt.staff;
+package staff.mgmt.domain.model.staff_mgmt.employee;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

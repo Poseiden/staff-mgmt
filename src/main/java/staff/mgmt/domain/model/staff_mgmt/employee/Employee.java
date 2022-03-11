@@ -1,4 +1,4 @@
-package staff.mgmt.domain.model.staff_mgmt.staff;
+package staff.mgmt.domain.model.staff_mgmt.employee;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -11,9 +11,9 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Staff {
+public class Employee {
     private String id;
-    private List<StaffSkill> staffSkillList;
+    private List<EmployeeSkill> employeeSkillList;
     private List<WorkExperience> workExperienceList;
-    private List<StaffRole> staffRoleList;
+    private List<EmployeeRole> employeeRoleList;
 }
