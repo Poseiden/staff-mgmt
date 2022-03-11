@@ -21,7 +21,7 @@ import java.util.Calendar;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table
+@Table(name="work_experience")
 public class WorkExperienceDBO {
     @Id
     @GeneratedValue(generator = "uuid")
@@ -32,3 +32,4 @@ public class WorkExperienceDBO {
     private Calendar end;
     private String company;
 }
+

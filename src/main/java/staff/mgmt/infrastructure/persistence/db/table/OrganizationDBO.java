@@ -20,7 +20,7 @@ import javax.persistence.Table;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table
+@Table(name = "organization")
 public class OrganizationDBO {
     @Id
     @GeneratedValue(generator = "uuid")

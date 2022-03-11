@@ -1,0 +1,18 @@
+server:
+    port: 8080
+spring:
+    profiles:
+      active: development
+    datasource:
+      url: jdbc:mysql://localhost:13306/staff_mgmt
+      username: root
+      password: admin
+
+    jpa:
+      hibernate:
+        ddl-auto: update
+#      show-sql:
+
+
+    swagger_enable: true
+

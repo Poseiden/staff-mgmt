@@ -20,7 +20,7 @@ import javax.persistence.Table;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table
+@Table(name="skill_category")
 public class SkillCategoryDBO {
     @Id
     @GeneratedValue(generator = "uuid")
