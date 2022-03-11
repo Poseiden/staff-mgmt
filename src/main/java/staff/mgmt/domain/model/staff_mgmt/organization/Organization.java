@@ -15,5 +15,5 @@ public class Organization {
     private String id;
     private Organization superior;
     private List<Organization> subordinate;
-    private List<String> staffRoleIdList;
+    private List<String> employeeRoleIdList;
 }

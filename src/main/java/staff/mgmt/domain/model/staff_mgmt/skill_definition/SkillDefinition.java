@@ -14,5 +14,5 @@ import java.util.List;
 public class SkillDefinition {
     private String id;
     private String skillCategoryId;
-    private List<String> staffSkillIdList;
+    private List<String> employeeSkillIdList;
 }

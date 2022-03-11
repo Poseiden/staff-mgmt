@@ -13,5 +13,5 @@ import java.util.List;
 @NoArgsConstructor
 public class Role {
     private String id;
-    private List<String> staffRoleIdList;
+    private List<String> employeeRoleIdList;
 }
