@@ -7,10 +7,12 @@ spring:
       url: jdbc:mysql://localhost:13306/staff_mgmt
       username: root
       password: admin
+    flyway:
+      enabled: true
 
     jpa:
       hibernate:
-        ddl-auto: update
+        ddl-auto: none
 #      show-sql:
 
 
