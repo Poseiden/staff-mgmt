@@ -13,8 +13,3 @@ spring:
     jpa:
       hibernate:
         ddl-auto: none
-#      show-sql:
-
-
-    swagger_enable: true
-
