@@ -8,10 +8,13 @@ import lombok.Setter;
 import org.hibernate.annotations.Generated;
 import org.hibernate.annotations.GenerationTime;
 import org.hibernate.annotations.GenericGenerator;
+import staff.mgmt.domain.model.staff_mgmt.organization.Organization;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import java.util.List;
@@ -31,4 +34,7 @@ public class OrganizationDBO {
     private String id;
     @OneToMany(mappedBy = "organizationDBO")
     private List<EmployeeRoleDBO> employeeRoleDBOList;
+    @ManyToOne
+    @JoinColumn(name = "superior")
+    private OrganizationDBO superior;
 }
