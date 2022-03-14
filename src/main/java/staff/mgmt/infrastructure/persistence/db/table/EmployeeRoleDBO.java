@@ -34,4 +34,7 @@ public class EmployeeRoleDBO {
     @ManyToOne
     @JoinColumn(name = "employee_id")
     private EmployeeDBO employeeDBO;
+    @ManyToOne
+    @JoinColumn(name = "role_id")
+    private RoleDBO roleDBO;
 }
