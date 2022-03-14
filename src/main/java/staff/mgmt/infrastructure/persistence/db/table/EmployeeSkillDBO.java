@@ -32,4 +32,7 @@ public class EmployeeSkillDBO {
     @ManyToOne
     @JoinColumn(name = "employee_id")
     private EmployeeDBO employeeDBO;
+    @ManyToOne
+    @JoinColumn(name = "skill_definition_id")
+    private SkillDefinitionDBO skillDefinitionDBO;
 }
