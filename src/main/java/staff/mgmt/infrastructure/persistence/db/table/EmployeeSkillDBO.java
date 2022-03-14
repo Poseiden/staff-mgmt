@@ -12,9 +12,9 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
-import java.util.List;
 
 @Getter
 @Setter
@@ -22,16 +22,14 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "employee")
-public class EmployeeDBO {
+@Table(name = "employee_skill")
+public class EmployeeSkillDBO {
     @Id
     @GeneratedValue(generator = "uuid")
     @GenericGenerator(name = "uuid", strategy = "org.hibernate.id.UUIDGenerator")
     @Generated(GenerationTime.INSERT)
     private String id;
-    @OneToMany(mappedBy = "employeeDBO" )
-    private List<EmployeeRoleDBO> employeeRoleDBOList;
-    @OneToMany(mappedBy = "employeeDBO" )
-    private List<EmployeeSkillDBO> employeeSkillDBOList;
-
+    @ManyToOne
+    @JoinColumn(name = "employee_id")
+    private EmployeeDBO employeeDBO;
 }
