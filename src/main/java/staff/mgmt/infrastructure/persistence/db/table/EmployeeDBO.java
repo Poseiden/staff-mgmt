@@ -33,5 +33,7 @@ public class EmployeeDBO {
     private List<EmployeeRoleDBO> employeeRoleDBOList;
     @OneToMany(mappedBy = "employeeDBO" )
     private List<EmployeeSkillDBO> employeeSkillDBOList;
+    @OneToMany(mappedBy = "employeeDBO" )
+    private List<WorkExperienceDBO> workExperienceDBOList;
 
 }
