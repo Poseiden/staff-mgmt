@@ -12,7 +12,9 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import java.util.List;
 
 @Getter
 @Setter
@@ -28,4 +30,6 @@ public class SkillCategoryDBO {
     @Generated(GenerationTime.INSERT)
     private String id;
     private String name;
+    @OneToMany(mappedBy = "skillCategoryDBO")
+    private List<SkillDefinitionDBO> skillDefinitionDBOList;
 }
