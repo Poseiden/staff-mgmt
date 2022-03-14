@@ -8,8 +8,6 @@ import lombok.Setter;
 import org.hibernate.annotations.Generated;
 import org.hibernate.annotations.GenerationTime;
 import org.hibernate.annotations.GenericGenerator;
-import staff.mgmt.domain.model.staff_mgmt.employee.Employee;
-import staff.mgmt.domain.model.staff_mgmt.role.Role;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
