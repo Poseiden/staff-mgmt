@@ -8,13 +8,15 @@ import lombok.Setter;
 import org.hibernate.annotations.Generated;
 import org.hibernate.annotations.GenerationTime;
 import org.hibernate.annotations.GenericGenerator;
+import staff.mgmt.domain.model.staff_mgmt.employee.Employee;
+import staff.mgmt.domain.model.staff_mgmt.role.Role;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
-import java.util.List;
 
 @Getter
 @Setter
@@ -22,13 +24,14 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "employee")
-public class EmployeeDBO {
+@Table(name = "employee_role")
+public class EmployeeRoleDBO {
     @Id
     @GeneratedValue(generator = "uuid")
     @GenericGenerator(name = "uuid", strategy = "org.hibernate.id.UUIDGenerator")
     @Generated(GenerationTime.INSERT)
     private String id;
-    @OneToMany(mappedBy = "employeeDBO" )
-    private List<EmployeeRoleDBO> employeeRoleDBOList;
+    @ManyToOne
+    @JoinColumn(name = "employee_id")
+    private EmployeeDBO employeeDBO;
 }
