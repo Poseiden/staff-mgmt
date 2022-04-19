@@ -25,5 +25,6 @@ public class SkillDefinition {
     @GenericGenerator(name = "uuid", strategy = "org.hibernate.id.UUIDGenerator")
     @Generated(GenerationTime.INSERT)
     private String id;
+    private String description;
     private String skillCategoryId;
 }

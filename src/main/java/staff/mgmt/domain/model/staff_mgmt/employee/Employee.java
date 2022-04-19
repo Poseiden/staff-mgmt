@@ -9,6 +9,7 @@ import org.hibernate.annotations.GenerationTime;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
@@ -27,10 +28,10 @@ public class Employee {
     @GenericGenerator(name = "uuid", strategy = "org.hibernate.id.UUIDGenerator")
     @Generated(GenerationTime.INSERT)
     private String id;
-    @OneToMany(mappedBy = "employee" )
+    @OneToMany(mappedBy = "employee", fetch = FetchType.LAZY)
     private List<EmployeeSkill> employeeSkillList;
-    @OneToMany(mappedBy = "employee" )
+    @OneToMany(mappedBy = "employee", fetch = FetchType.LAZY)
     private List<WorkExperience> workExperienceList;
-    @OneToMany(mappedBy = "employee" )
+    @OneToMany(mappedBy = "employee", fetch = FetchType.LAZY)
     private List<EmployeeRole> employeeRoleList;
 }
