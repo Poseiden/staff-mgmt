@@ -12,8 +12,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import javax.persistence.Transient;
-import java.util.List;
 
 @Getter
 @Setter
@@ -28,7 +26,5 @@ public class SkillCategory {
     @Generated(GenerationTime.INSERT)
     private String id;
     private String name;
-    @Transient
-    private List<String> skillDefinitionIdList;
 
 }

@@ -12,8 +12,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import javax.persistence.Transient;
-import java.util.List;
 
 @Getter
 @Setter
@@ -27,6 +25,5 @@ public class Role {
     @GenericGenerator(name = "uuid", strategy = "org.hibernate.id.UUIDGenerator")
     @Generated(GenerationTime.INSERT)
     private String id;
-    @Transient
-    private List<String> employeeRoleIdList;
+    private String name;
 }

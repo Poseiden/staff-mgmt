@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.Embeddable;
-import java.util.Calendar;
+import java.time.LocalDate;
 
 @Getter
 @Setter
@@ -14,6 +14,6 @@ import java.util.Calendar;
 @AllArgsConstructor
 @Embeddable
 public class Period {
-    private Calendar start;
-    private Calendar end;
+    private LocalDate start;
+    private LocalDate end;
 }
