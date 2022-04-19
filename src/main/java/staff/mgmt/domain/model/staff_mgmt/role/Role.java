@@ -20,7 +20,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "role")
+@Table
 public class Role {
     @Id
     @GeneratedValue(generator = "uuid")

@@ -20,7 +20,7 @@ import javax.persistence.Table;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "employee_role")
+@Table
 public class EmployeeRole {
     @Id
     @GeneratedValue(generator = "uuid")
@@ -28,7 +28,6 @@ public class EmployeeRole {
     @Generated(GenerationTime.INSERT)
     private String id;
 
-    //todo 本来不持有聚合根的引用
     @ManyToOne
     @JoinColumn(name = "employee_id")
     private Employee employee;

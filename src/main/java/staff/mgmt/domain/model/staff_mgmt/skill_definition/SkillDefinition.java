@@ -20,7 +20,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name="skill_definition")
+@Table
 public class SkillDefinition {
     @Id
     @GeneratedValue(generator = "uuid")

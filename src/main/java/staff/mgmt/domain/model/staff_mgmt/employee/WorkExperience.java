@@ -21,7 +21,7 @@ import javax.persistence.Table;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name="work_experience")
+@Table
 public class WorkExperience {
     @Id
     @GeneratedValue(generator = "uuid")

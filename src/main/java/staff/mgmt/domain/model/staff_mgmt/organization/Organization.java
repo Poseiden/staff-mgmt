@@ -24,7 +24,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "organization")
+@Table
 public class Organization {
     @Id
     @GeneratedValue(generator = "uuid")

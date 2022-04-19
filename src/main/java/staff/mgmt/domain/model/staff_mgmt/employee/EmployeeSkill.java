@@ -20,7 +20,7 @@ import javax.persistence.Table;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "employee_skill")
+@Table
 public class EmployeeSkill {
     @Id
     @GeneratedValue(generator = "uuid")
@@ -32,7 +32,6 @@ public class EmployeeSkill {
     private int duration;
     private String level;
 
-    //todo 聚合中的实体理应不持有聚合根的
     @ManyToOne
     @JoinColumn(name = "employee_id")
     private Employee employee;

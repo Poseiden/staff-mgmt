@@ -20,7 +20,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "employee")
+@Table
 public class Employee {
     @Id
     @GeneratedValue(generator = "uuid")
